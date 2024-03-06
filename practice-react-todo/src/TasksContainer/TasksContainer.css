@@ -1,0 +1,21 @@
+.TasksContainer {
+  background-color: rgb(31, 31, 31);
+  width: 90%;
+  max-width: 500px;
+  align-self: center;
+  margin-top: 30px;
+  padding: 10px;
+  max-height: 60vh;
+  height: 60vh;
+  overflow: auto;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 15px;
+  border: 1px solid black;
+  color: white;
+}
+
+.TaskContainer-Empty-Title {
+  color: gray;
+  text-align: center;
+  line-height: 55vh;
+}

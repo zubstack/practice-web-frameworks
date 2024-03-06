@@ -1,0 +1,20 @@
+.TaskCounter {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 24px;
+  max-width: 90%;
+  margin: 15px auto;
+  padding: 5px;
+  text-align: center;
+  color: white;
+}
+
+.TaskCounter-span {
+  color: greenyellow;
+  padding: 0 5px;
+  font-size: 30px;
+}
+
+.TaskCounter--loading {
+  opacity: 0.5;
+  background-color: rgb(20, 20, 20);
+}

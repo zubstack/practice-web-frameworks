@@ -1,0 +1,28 @@
+.Nav-Container {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  padding: 1em 3em;
+  color: white;
+}
+.Nav-Container h1 {
+  font-size: 3em;
+}
+
+.Nav-Container li {
+  list-style: none;
+}
+
+.Nav-Container li a {
+  text-decoration: none;
+  color: white;
+  font-size: 40px;
+}
+
+.Nav-Container li a:hover {
+  color: rgb(191, 191, 191);
+}
+
+/* * {
+  border: 1px solid blue;
+} */

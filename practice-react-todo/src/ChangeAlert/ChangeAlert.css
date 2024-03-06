@@ -1,0 +1,15 @@
+.ChangeAlert {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 12px;
+  padding: 7px;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  background-color: rgb(224, 224, 49);
+  width: auto;
+  margin: auto;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 5px;
+}

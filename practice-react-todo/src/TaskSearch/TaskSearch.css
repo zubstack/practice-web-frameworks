@@ -1,0 +1,19 @@
+.TaskSearch {
+  padding: 5px;
+  width: 300px;
+  max-width: 90%;
+  align-self: center;
+  text-align: center;
+  height: 40px;
+  border-radius: 3px;
+  font-family: "Ubuntu", sans-serif;
+  border: none;
+}
+
+.TaskSearch:focus {
+  outline: 1px solid greenyellow;
+}
+
+.TaskSearch:disabled {
+  opacity: 0.5;
+}

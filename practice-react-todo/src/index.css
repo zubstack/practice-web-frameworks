@@ -1,0 +1,59 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* border: 1px solid transparent; */
+}
+
+html {
+  background: rgb(39, 39, 39);
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  position: relative;
+  margin: 0 24px;
+}
+
+button {
+  /* Variables */
+  --button_radius: 0.75em;
+  --button_color: #e8e8e8;
+  --button_outline_color: #000000;
+  font-size: 17px;
+  font-weight: bold;
+  border: none;
+  border-radius: var(--button_radius);
+  background: var(--button_outline_color);
+  transition: 0.2s;
+}
+
+.flex {
+  display: flex;
+}
+
+.gap {
+  gap: 1em;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: rgb(105, 105, 105);
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(60, 60, 60);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #151515;
+}

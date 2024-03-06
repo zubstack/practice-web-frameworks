@@ -1,0 +1,26 @@
+.TaskItem {
+  display: flex;
+  align-items: center;
+  border: 1px solid rgb(145, 145, 145);
+  padding: 1em;
+  background: rgb(43, 43, 43);
+}
+
+.TaskItem:not(:first-child) {
+  border-top: none;
+}
+
+.TaskItem-Task {
+  flex: 1;
+  padding: 12px 9px;
+  margin-left: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: rgb(195, 195, 195);
+}
+
+.TaskItem-Task--complete {
+  font-weight: bold;
+  color: white;
+}

@@ -1,0 +1,8 @@
+#baseLayout {
+  background-color: white;
+  margin: auto;
+  width: 50%;
+  text-align: center;
+  padding: 1rem 3rem;
+  border-radius: 10px;
+}

@@ -1,0 +1,10 @@
+.results__container {
+  text-align: start;
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.results__container span {
+  font-weight: bold;
+  margin-left: 10px;
+}

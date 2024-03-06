@@ -1,0 +1,28 @@
+.navbar__container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.button__next {
+  background-color: black;
+  color: white;
+}
+
+.button__next:hover {
+  background-color: rgb(73, 73, 73);
+}
+
+.button__exit {
+  background-color: rgb(208, 208, 208);
+  color: rgb(3, 3, 3);
+}
+
+.button__exit--hidden {
+  opacity: 0;
+  cursor: default;
+}
+
+.button__exit :hover {
+  background-color: rgb(183, 183, 183);
+}

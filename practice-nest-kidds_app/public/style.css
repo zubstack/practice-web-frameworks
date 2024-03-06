@@ -1,0 +1,287 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* * {
+  border: 1px solid;
+} */
+body {
+  position: relative;
+  min-height: 100vh;
+}
+
+#header__container {
+  background: #000;
+  color: #fff;
+  font-size: 0.75em;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  padding: 1em;
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+#game__title {
+  padding: 0 0.5em;
+  margin-bottom: 1em;
+}
+
+#game__title span {
+  font-weight: 600;
+  color: blue;
+}
+
+#main__container {
+  width: 98vw;
+  margin: auto;
+  padding-bottom: 2.7em;
+}
+
+#quizForm {
+  margin: auto;
+}
+
+.group__container {
+  display: flex;
+  align-items: center;
+  gap: 0.25em;
+  font-size: 2.4em;
+  padding: 0.75em 0;
+  justify-content: center;
+  margin-bottom: 0.1em;
+  border-bottom: 1px solid gray;
+}
+
+.group__container.success {
+  background-color: rgb(190, 226, 145);
+}
+
+.group__container.failure {
+  background-color: rgb(226, 145, 145);
+}
+
+.checkboxes__container {
+  display: flex;
+  gap: 0.08em;
+  align-items: center;
+}
+
+.checkboxes__container input[type='checkbox'] {
+  background-color: #fff;
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+  font: inherit;
+  color: currentColor;
+  width: 0.75em;
+  height: 0.75em;
+  border: 2px solid currentColor;
+  border-radius: 0.15em;
+}
+
+.checkboxes__container input[type='checkbox']:checked {
+  border: 2px solid currentColor;
+  animation: jelly 0.4s ease;
+}
+
+@-moz-keyframes jelly {
+  from {
+    transform: scale(1, 1);
+  }
+  30% {
+    transform: scale(1.25, 0.75);
+  }
+  40% {
+    transform: scale(0.75, 1.25);
+  }
+  50% {
+    transform: scale(1.15, 0.85);
+  }
+  65% {
+    transform: scale(0.95, 1.05);
+  }
+  75% {
+    transform: scale(1.05, 0.95);
+  }
+  to {
+    transform: scale(1, 1);
+  }
+}
+@-webkit-keyframes jelly {
+  from {
+    transform: scale(1, 1);
+  }
+  30% {
+    transform: scale(1.25, 0.75);
+  }
+  40% {
+    transform: scale(0.75, 1.25);
+  }
+  50% {
+    transform: scale(1.15, 0.85);
+  }
+  65% {
+    transform: scale(0.95, 1.05);
+  }
+  75% {
+    transform: scale(1.05, 0.95);
+  }
+  to {
+    transform: scale(1, 1);
+  }
+}
+@-o-keyframes jelly {
+  from {
+    transform: scale(1, 1);
+  }
+  30% {
+    transform: scale(1.25, 0.75);
+  }
+  40% {
+    transform: scale(0.75, 1.25);
+  }
+  50% {
+    transform: scale(1.15, 0.85);
+  }
+  65% {
+    transform: scale(0.95, 1.05);
+  }
+  75% {
+    transform: scale(1.05, 0.95);
+  }
+  to {
+    transform: scale(1, 1);
+  }
+}
+@keyframes jelly {
+  from {
+    transform: scale(1, 1);
+  }
+  30% {
+    transform: scale(1.25, 0.75);
+  }
+  40% {
+    transform: scale(0.75, 1.25);
+  }
+  50% {
+    transform: scale(1.15, 0.85);
+  }
+  65% {
+    transform: scale(0.95, 1.05);
+  }
+  75% {
+    transform: scale(1.05, 0.95);
+  }
+  to {
+    transform: scale(1, 1);
+  }
+}
+
+#form__buttons__container {
+  background-color: #9e9d9d;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 1em;
+  padding: 1em;
+}
+
+button {
+  border: none;
+}
+
+.btn {
+  padding: 1em;
+  font-weight: bolder;
+  border-radius: 5%;
+}
+.btn__reset {
+  background-color: rgb(104, 212, 255);
+}
+
+.btn__restart {
+  color: white;
+  background-color: rgb(12, 12, 12);
+}
+
+footer {
+  text-align: center;
+  background: #000;
+  color: #fff;
+  padding: 0.25em 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+}
+
+@media (min-width: 380px) {
+  .group__container {
+    gap: 0.5em;
+    font-size: 4em;
+    margin-bottom: 0.1em;
+  }
+  .checkboxes__container {
+    gap: 0.2em;
+  }
+}
+@media (min-width: 920px) {
+  #header__container {
+    font-size: 1em;
+  }
+
+  #game__title {
+    font-size: 2em;
+    margin-bottom: 1em;
+  }
+
+  #main__container {
+    width: 90vw;
+    margin: auto;
+    padding-bottom: 2.7em;
+  }
+
+  #quizForm {
+    width: 80%;
+  }
+
+  .group__container {
+    gap: 0.75em;
+    font-size: 4em;
+    margin-bottom: 0.2em;
+    border: 1px solid black;
+  }
+
+  .checkboxes__container {
+    gap: 0.4em;
+  }
+
+  .checkboxes__container input[type='checkbox'] {
+    cursor: pointer;
+    border: 3px solid currentColor;
+  }
+
+  .checkboxes__container input[type='checkbox']:checked {
+    border: 1px solid currentColor;
+  }
+  #form__buttons__container {
+    background-color: #a3a3a3;
+    padding: 1em;
+  }
+  .btn {
+    padding: 1.5em;
+    border-radius: 20px;
+    font-size: 1em;
+  }
+
+  .btn__reset:hover {
+    background-color: rgb(25, 171, 228);
+  }
+  .btn__submit:hover {
+    background-color: rgb(208, 253, 255);
+  }
+
+  .btn__restart:hover {
+    color: white;
+    background-color: rgb(63, 64, 73);
+  }
+}

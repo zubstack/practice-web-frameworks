@@ -1,0 +1,42 @@
+<!-- views/index.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book list</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+
+  <body>
+    <header><%- include('./partials/header'); %></header>
+    <% books.forEach(function(book) { %>
+    <div
+      class="abook"
+      data-rating="10"
+      data-title="You Can Negotiate Anything - by Herb Cohen"
+      data-date="2023-08-02"
+    >
+      <figure>
+        <a href="/book/dashboard"
+          ><img
+            src="https://covers.openlibrary.org/b/isbn/<%= book.isbn %>-M.jpg"
+            loading="lazy"
+            alt="<%= book.title %>"
+        /></a>
+      </figure>
+      <h2>
+        <a href="/book/dashboard"><%= book.title %> - <%= book.author %></a>
+      </h2>
+      <small
+        ><p>Date read: <span>2023-08-02 </span></p>
+        <p>
+          Recommended: <strong><%= book.recommendation %></strong>/10
+        </p></small
+      >
+      <p><%= book.review %></p>
+    </div>
+    <% }); %>
+  </body>
+</html>
